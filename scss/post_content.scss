@@ -1,0 +1,24 @@
+@mixin post_img {
+    @extend .img-fluid, .rounded, .border;
+}
+
+.post_content {
+
+    >table {
+        @extend .table, .table-bordered, .table-hover;
+
+        thead {
+            @extend .thead-light;
+        }
+    }
+
+    >img:only-child {
+        @include post_img;
+    }
+
+    >p {
+        >img {
+            @include post_img;
+        }
+    }
+}

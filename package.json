@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "sass": "sass  scss/custom.scss  src/css/bootstrap4.css"
+  },
+  "type": "module",
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "clipboardy": "^3.0.0",
+    "sass": "^1.57.1"
+  }
+}

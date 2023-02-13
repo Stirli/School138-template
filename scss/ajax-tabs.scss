@@ -1,0 +1,15 @@
+.ajax__tab_header {
+    @extend .nav, .nav-tabs
+}
+
+.ajax__tab_header > span{
+    @extend .nav-link
+}
+
+.ajax__tab_active{
+    @extend .active
+}
+
+.ajax__tab_body {
+    @extend .tab-content
+}

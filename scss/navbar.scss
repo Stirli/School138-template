@@ -1,0 +1,24 @@
+.level_0 {
+    @extend .navbar-nav, , .mr-auto;
+}
+
+.level_0>.parent:hover>.level_1 {
+    @extend .show
+}
+
+.level_0>li {
+    @extend .dropdown
+}
+
+.level_0>.parent>a {
+    @extend .nav-link, .dropdown-toggle
+}
+
+.level_1 {
+    @extend .dropdown-menu;
+    margin-top: 0 !important;
+}
+
+.level_1 a {
+    @extend .dropdown-item;
+}

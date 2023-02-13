@@ -1,0 +1,8 @@
+$units: vh, vw, vmin, vmax;
+@each $unit in $units{
+    @for $i from 1 to 100{
+        .#{$unit}-#{$i}{
+            height: #{$i}#{$unit};
+        }
+    }
+}

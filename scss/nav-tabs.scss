@@ -1,0 +1,11 @@
+.nav-tabs {
+    @extend .border-primary
+}
+
+.nav-tabs .nav-link {
+    @extend .text-dark-primary
+}
+
+.nav-tabs .nav-link.active {
+    @extend .bg-dark-primary, .text-white;
+}

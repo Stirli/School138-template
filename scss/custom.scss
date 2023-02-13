@@ -1,0 +1,45 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import 'navbar.scss';
+@import 'nav-tabs.scss';
+@import 'yandex-search.scss';
+@import 'ajax-tabs.scss';
+@import 'post_content.scss';
+@import 'footer.scss';
+@import 'main-aside.scss';
+@import 'sizing.scss';
+
+$enable-responsive-font-sizes: true;
+$theme-colors: (
+    "white": #fff,
+    "primary":#aca6ed,
+    "dark-primary": #5e5372,
+);
+
+body.pureVis * {
+    background: black !important;
+    color: white !important;
+}
+
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+);
+
+@media (min-width:1600px) {
+    .container-fluid {
+        max-width: 1550px;
+    }
+}
+@import '../node_modules/bootstrap/scss/bootstrap'
