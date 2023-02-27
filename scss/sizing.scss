@@ -1,8 +1,18 @@
 $units: vh, vw, vmin, vmax;
-@each $unit in $units{
-    @for $i from 1 to 100{
-        .#{$unit}-#{$i}{
-            height: #{$i}#{$unit};
-        }
+@each $unit in $units {
+  @for $i from 1 to 100 {
+    .#{$unit}-#{$i} {
+      height: #{$i}#{$unit} !important;
     }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .w#{$infix}-100 {
+      width: 100% !important;
+    }
+  }
 }

@@ -12,6 +12,7 @@
 @import 'main-aside.scss';
 @import 'sizing.scss';
 @import 'card.scss';
+@import 'borders.scss';
 
 $enable-responsive-font-sizes: true;
 body{
@@ -50,21 +51,6 @@ body.pureVis * {
     aspect-ratio: 16/9;
 }
 
-.border-x-0 {
-    @extend .border-left-0, .border-right-0;
-}
-
-.border-y-0 {
-    @extend .border-top-0, .border-bottom-0;
-}
-
-.border-x {
-    @extend .border-left, .border-right;
-}
-
-.border-y {
-    @extend .border-top, .border-bottom;
-}
 
 $grid-breakpoints: (
     xs: 0,

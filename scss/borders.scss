@@ -1,0 +1,36 @@
+$sides: "", -top, -right, -bottom, -left;
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $side in $sides {
+      .border#{$infix}#{unquote($side)} {
+        border#{$side}: $border-width solid $border-color !important;
+      }
+      .border#{$infix}#{unquote($side)}-0 {
+        border#{$side}: none !important;
+      }
+    }
+
+    .border#{$infix}-x {
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-y {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-x-0 {
+      border-left: 0 !important;
+      border-right: 0 !important;
+    }
+
+    .border#{$infix}-y-0 {
+      border-top: 0 !important;
+      border-bottom: 0 !important;
+    }
+  }
+}

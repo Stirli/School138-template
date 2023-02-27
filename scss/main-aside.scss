@@ -7,6 +7,6 @@
     }
     
     img {
-        @extend .img-fluid;
+        max-width: 100%;
     }
 }
