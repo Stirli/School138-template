@@ -20,5 +20,10 @@
         >img {
             @include post_img;
         }
+
+        &[style*="text-align: justify"] img,
+        .post_content>img:only-child {
+            width: 100%;
+        }
     }
 }

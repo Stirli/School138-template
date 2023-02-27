@@ -1,5 +1,8 @@
+@use 'sass:math';
+
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+@import "../node_modules/bootstrap/scss/mixins";
 @import 'navbar.scss';
 @import 'nav-tabs.scss';
 @import 'yandex-search.scss';
@@ -8,11 +11,16 @@
 @import 'footer.scss';
 @import 'main-aside.scss';
 @import 'sizing.scss';
+@import 'card.scss';
 
 $enable-responsive-font-sizes: true;
+body{
+    @extend body;
+    @include rfs(20);
+}
+
 $theme-colors: (
     "white": #fff,
-    "primary":#aca6ed,
     "dark-primary": #5e5372,
 );
 
@@ -21,6 +29,42 @@ body.pureVis * {
     color: white !important;
 }
 
+
+
+@for $i from 1 through 10 {
+    h#{$i}{
+        $h-offset : math.floor(calc((10 - $i) / 2));
+        @extend .my-#{$h-offset};
+    }
+}
+
+.ar-1 {
+    aspect-ratio: 1;
+}
+
+.ar-4-3 {
+    aspect-ratio: 4/3;
+}
+
+.ar-16-9 {
+    aspect-ratio: 16/9;
+}
+
+.border-x-0 {
+    @extend .border-left-0, .border-right-0;
+}
+
+.border-y-0 {
+    @extend .border-top-0, .border-bottom-0;
+}
+
+.border-x {
+    @extend .border-left, .border-right;
+}
+
+.border-y {
+    @extend .border-top, .border-bottom;
+}
 
 $grid-breakpoints: (
     xs: 0,
@@ -37,9 +81,22 @@ $container-max-widths: (
     xl: 1140px
 );
 
+.module {
+    @extend .my-4;
+
+    &:first-child {
+        @extend .mt-0;
+    }
+
+    &:last-child {
+        @extend .mb-0;
+    }
+}
+
 @media (min-width:1600px) {
     .container-fluid {
         max-width: 1550px;
     }
 }
+
 @import '../node_modules/bootstrap/scss/bootstrap'

@@ -1,0 +1,9 @@
+.card.card-full-width {
+    @extend .w-100, .border-x-0;
+
+    .card-header,
+    .card-body,
+    .card-footer {
+        @extend .px-0,
+    }
+}
