@@ -1,31 +1,35 @@
-.level_0 {
-  @extend .navbar-nav, , .mr-auto;
+#main-nav.navbar.navbar-expand-lg {
+  .level_0 {
+    @extend .navbar-nav, , .mr-auto;
 
-}
+    & > .parent {
+      & > .level_1 {
+        height: auto;
+        opacity: 1;
+      }
+    }
 
-.level_0 > .parent:hover > .level_1 {
-  @extend .show;
-  height: auto;
-  opacity: 1
-}
+    & > li {
+      @extend .dropdown;
+    }
 
-.level_0 > li {
-  @extend .dropdown;
-}
+    & > .parent > a {
+      @extend .nav-link, .dropdown-toggle, .text-white;
+      cursor: pointer;
+    }
 
-.level_0 > .parent > a {
-  @extend .nav-link, .dropdown-toggle, .text-white;
-  pointer-events: none;
-}
+    .level_1 {
+      @extend .dropdown-menu;
+      margin-top: 0 !important;
+      height: 0;
+      opacity: 0;
+      transition: all 1s ease;
 
-.level_1 {
-  @extend .dropdown-menu;
-  margin-top: 0 !important;
-  height: 0;
-  opacity: 0;
-  transition: all 1s ease;
-}
+      a {
+        @extend .dropdown-item;
 
-.level_1 a {
-  @extend .dropdown-item;
+        white-space: pre-line !important;
+      }
+    }
+  }
 }

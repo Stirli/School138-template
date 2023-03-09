@@ -1,17 +1,18 @@
 .ajax__tab_header {
   @extend .nav, .nav-tabs, .row;
-}
 
-.ajax__tab_header > span {
-  @extend .nav-link, .col-12, .col-md;
-}
+  & > span {
+    @extend .nav-link, .col-12, .col-md;
 
-.ajax__tab_header span {
-  @extend .w-100;
-}
+    span {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-.ajax__tab_active {
-  @extend .active;
+  .ajax__tab_active {
+    @extend .active;
+  }
 }
 
 .ajax__tab_body {
