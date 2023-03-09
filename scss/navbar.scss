@@ -3,36 +3,30 @@
     @extend .navbar-nav, .mr-auto;
 
     & > .parent {
-      & > .level_1 {
-        height: auto;
-        opacity: 1;
-      }
-    }
-
-    & > li {
       @extend .dropdown;
-    }
 
-    & > .parent > a {
-      @extend .nav-link, .dropdown-toggle, .text-white;
-      cursor: pointer;
-    }
+      & > .link {
+        @extend .nav-link, .dropdown-toggle, .text-white;
+        cursor: pointer;
+      }
 
-    .level_1 {
-      @extend .dropdown-menu;
-      margin-top: 0 !important;
-      height: 0;
-      opacity: 0;
-      transition: all 1s ease;
+      & > .level_1 {
+        @extend .dropdown-menu;
 
-      a.link {
-        @extend .dropdown-item;
+        .item {
 
-        white-space: normal !important;
-        min-width: 40vh;
+          .link {
+            @extend .dropdown-item;
+            min-width: 40vh;
+            white-space: normal !important;
+            display: list-item !important;
+            list-style-position: inside;
+            list-style-type: disc;
 
-        &.active {
-          background-color: theme-color("primary") !important;
+            &.active {
+              background-color: theme-color("primary") !important;
+            }
+          }
         }
       }
     }

@@ -1,22 +1,15 @@
 @charset "UTF-8";
-#main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 {
-  height: auto;
-  opacity: 1;
-}
-#main-nav.navbar.navbar-expand-lg .level_0 > .parent > a {
+#main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link {
   cursor: pointer;
 }
-#main-nav.navbar.navbar-expand-lg .level_0 .level_1 {
-  margin-top: 0 !important;
-  height: 0;
-  opacity: 0;
-  transition: all 1s ease;
-}
-#main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link {
-  white-space: normal !important;
+#main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link {
   min-width: 40vh;
+  white-space: normal !important;
+  display: list-item !important;
+  list-style-position: inside;
+  list-style-type: disc;
 }
-#main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 .ajax__tab_header a.link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.ajax__tab_active {
+#main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link.active, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .ajax__tab_header .link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link.ajax__tab_active {
   background-color: #5e5372 !important;
 }
 
@@ -4280,12 +4273,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #5e5372;
   border-color: #5e5372;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-primary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-primary {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-primary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-primary.link {
   color: #fff;
   background-color: #463e54;
   border-color: #40384d;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-primary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-primary:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-primary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-primary.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(118, 109, 135, 0.5);
 }
 
@@ -4310,12 +4303,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-secondary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-secondary {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-secondary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-secondary.link {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-secondary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-secondary:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-secondary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-secondary.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
@@ -4340,12 +4333,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-success.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-success {
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-success.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-success.link {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430;
 }
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-success.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-success:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-success.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-success.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
@@ -4370,12 +4363,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-info.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-info {
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-info.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-info.link {
   color: #fff;
   background-color: #117a8b;
   border-color: #10707f;
 }
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-info.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-info:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-info.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-info.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
 
@@ -4400,12 +4393,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-warning.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-warning {
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-warning.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-warning.link {
   color: #212529;
   background-color: #d39e00;
   border-color: #c69500;
 }
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-warning.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-warning:focus {
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-warning.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-warning.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
@@ -4430,12 +4423,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-danger.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-danger {
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-danger.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-danger.link {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d;
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-danger.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-danger:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-danger.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-danger.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
@@ -4460,12 +4453,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-light.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-light {
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-light.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-light.link {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df;
 }
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-light.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-light:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-light.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-light.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -4490,12 +4483,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-dark.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-dark {
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-dark.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-dark.link {
   color: #fff;
   background-color: #1d2124;
   border-color: #171a1d;
 }
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-dark.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-dark:focus {
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-dark.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-dark.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
@@ -4520,12 +4513,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   background-color: #fff;
   border-color: #fff;
 }
-.btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-white.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-white.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-white {
+.btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-white.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-white.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-white.link {
   color: #212529;
   background-color: #e6e6e6;
   border-color: #dfdfdf;
 }
-.btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-white.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-white.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-white:focus {
+.btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-white.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-white.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-white.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
 }
 
@@ -4545,12 +4538,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #5e5372;
   background-color: transparent;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-primary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-primary {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-primary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-primary.link {
   color: #fff;
   background-color: #5e5372;
   border-color: #5e5372;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-primary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-primary:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-primary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-primary.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(94, 83, 114, 0.5);
 }
 
@@ -4570,12 +4563,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #6c757d;
   background-color: transparent;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-secondary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-secondary {
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-secondary.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-secondary.link {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-secondary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-secondary:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-secondary.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-secondary.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -4595,12 +4588,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #28a745;
   background-color: transparent;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-success.ajax__tab_active:not(:disabled):not(.disabled), #ya-site-form0 .ajax__tab_header .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled), .ajax__tab_header #ya-site-form0 .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle, #ya-site-form0 .show > .dropdown-toggle.ya-site-form__submit, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-success, #ya-site-form0 #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.ya-site-form__submit, #main-nav.navbar.navbar-expand-lg #ya-site-form0 .level_0 > .parent.show > a.ya-site-form__submit {
+.btn-outline-success:not(:disabled):not(.disabled):active, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-success.ajax__tab_active:not(:disabled):not(.disabled), #ya-site-form0 .ajax__tab_header .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled), .ajax__tab_header #ya-site-form0 .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle, #ya-site-form0 .show > .dropdown-toggle.ya-site-form__submit, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-success.link, #ya-site-form0 #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .ya-site-form__submit.link, #main-nav.navbar.navbar-expand-lg #ya-site-form0 .level_0 > .parent.show > .ya-site-form__submit.link {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-success.ajax__tab_active:not(:disabled):not(.disabled):focus, #ya-site-form0 .ajax__tab_header .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled):focus, .ajax__tab_header #ya-site-form0 .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus, #ya-site-form0 .show > .dropdown-toggle.ya-site-form__submit:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-success:focus, #ya-site-form0 #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.ya-site-form__submit:focus, #main-nav.navbar.navbar-expand-lg #ya-site-form0 .level_0 > .parent.show > a.ya-site-form__submit:focus {
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, #ya-site-form0 .ya-site-form__submit:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-success.ajax__tab_active:not(:disabled):not(.disabled):focus, #ya-site-form0 .ajax__tab_header .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled):focus, .ajax__tab_header #ya-site-form0 .ya-site-form__submit.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus, #ya-site-form0 .show > .dropdown-toggle.ya-site-form__submit:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-success.link:focus, #ya-site-form0 #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .ya-site-form__submit.link:focus, #main-nav.navbar.navbar-expand-lg #ya-site-form0 .level_0 > .parent.show > .ya-site-form__submit.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -4620,12 +4613,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #17a2b8;
   background-color: transparent;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-info.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-info {
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-info.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-info.link {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-info.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-info:focus {
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-info.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-info.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -4645,12 +4638,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #ffc107;
   background-color: transparent;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-warning.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-warning {
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-warning.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-warning.link {
   color: #212529;
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-warning.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-warning:focus {
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-warning.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-warning.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -4670,12 +4663,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #dc3545;
   background-color: transparent;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-danger.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-danger {
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-danger.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-danger.link {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-danger.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-danger:focus {
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-danger.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-danger.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -4695,12 +4688,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #f8f9fa;
   background-color: transparent;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-light.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-light {
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-light.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-light.link {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-light.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-light:focus {
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-light.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-light.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -4720,12 +4713,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #343a40;
   background-color: transparent;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-dark.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-dark {
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-dark.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-dark.link {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-dark.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-dark:focus {
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-dark.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-dark.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -4745,12 +4738,12 @@ fieldset:disabled #ya-site-form0 a.ya-site-form__submit,
   color: #fff;
   background-color: transparent;
 }
-.btn-outline-white:not(:disabled):not(.disabled):active, .btn-outline-white:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-white.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-white.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-white {
+.btn-outline-white:not(:disabled):not(.disabled):active, .btn-outline-white:not(:disabled):not(.disabled).active, .ajax__tab_header .btn-outline-white.ajax__tab_active:not(:disabled):not(.disabled), .show > .btn-outline-white.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-white.link {
   color: #212529;
   background-color: #fff;
   border-color: #fff;
 }
-.btn-outline-white:not(:disabled):not(.disabled):active:focus, .btn-outline-white:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-white.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-white.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a.btn-outline-white:focus {
+.btn-outline-white:not(:disabled):not(.disabled):active:focus, .btn-outline-white:not(:disabled):not(.disabled).active:focus, .ajax__tab_header .btn-outline-white.ajax__tab_active:not(:disabled):not(.disabled):focus, .show > .btn-outline-white.dropdown-toggle:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .btn-outline-white.link:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
@@ -4840,15 +4833,15 @@ input[type=button].btn-block {
 .dropup,
 .dropright,
 .dropdown,
-#main-nav.navbar.navbar-expand-lg .level_0 > li,
+#main-nav.navbar.navbar-expand-lg .level_0 > .parent,
 .dropleft {
   position: relative;
 }
 
-.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a {
+.dropdown-toggle, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link {
   white-space: nowrap;
 }
-.dropdown-toggle::after, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after {
+.dropdown-toggle::after, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -4858,11 +4851,11 @@ input[type=button].btn-block {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
-.dropdown-toggle:empty::after, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:empty::after {
+.dropdown-toggle:empty::after, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:empty::after {
   margin-left: 0;
 }
 
-.dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 {
+.dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -4932,13 +4925,13 @@ input[type=button].btn-block {
     left: auto;
   }
 }
-.dropup .dropdown-menu, .dropup #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .level_0 .dropup .level_1 {
+.dropup .dropdown-menu, .dropup #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .dropup .level_0 > .parent > .level_1 {
   top: auto;
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 0.125rem;
 }
-.dropup .dropdown-toggle::after, .dropup #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after, #main-nav.navbar.navbar-expand-lg .dropup .level_0 > .parent > a::after {
+.dropup .dropdown-toggle::after, .dropup #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after, #main-nav.navbar.navbar-expand-lg .dropup .level_0 > .parent > .link::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -4948,18 +4941,18 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid;
   border-left: 0.3em solid transparent;
 }
-.dropup .dropdown-toggle:empty::after, .dropup #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:empty::after, #main-nav.navbar.navbar-expand-lg .dropup .level_0 > .parent > a:empty::after {
+.dropup .dropdown-toggle:empty::after, .dropup #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:empty::after, #main-nav.navbar.navbar-expand-lg .dropup .level_0 > .parent > .link:empty::after {
   margin-left: 0;
 }
 
-.dropright .dropdown-menu, .dropright #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .level_0 .dropright .level_1 {
+.dropright .dropdown-menu, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > .level_1 {
   top: 0;
   right: auto;
   left: 100%;
   margin-top: 0;
   margin-left: 0.125rem;
 }
-.dropright .dropdown-toggle::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > a::after {
+.dropright .dropdown-toggle::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > .link::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -4969,30 +4962,30 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid transparent;
   border-left: 0.3em solid;
 }
-.dropright .dropdown-toggle:empty::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:empty::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > a:empty::after {
+.dropright .dropdown-toggle:empty::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:empty::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > .link:empty::after {
   margin-left: 0;
 }
-.dropright .dropdown-toggle::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > a::after {
+.dropright .dropdown-toggle::after, .dropright #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after, #main-nav.navbar.navbar-expand-lg .dropright .level_0 > .parent > .link::after {
   vertical-align: 0;
 }
 
-.dropleft .dropdown-menu, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .level_0 .dropleft .level_1 {
+.dropleft .dropdown-menu, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .level_1 {
   top: 0;
   right: 100%;
   left: auto;
   margin-top: 0;
   margin-right: 0.125rem;
 }
-.dropleft .dropdown-toggle::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > a::after {
+.dropleft .dropdown-toggle::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .link::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
 }
-.dropleft .dropdown-toggle::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > a::after {
+.dropleft .dropdown-toggle::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .link::after {
   display: none;
 }
-.dropleft .dropdown-toggle::before, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::before, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > a::before {
+.dropleft .dropdown-toggle::before, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::before, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .link::before {
   display: inline-block;
   margin-right: 0.255em;
   vertical-align: 0.255em;
@@ -5001,14 +4994,14 @@ input[type=button].btn-block {
   border-right: 0.3em solid;
   border-bottom: 0.3em solid transparent;
 }
-.dropleft .dropdown-toggle:empty::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:empty::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > a:empty::after {
+.dropleft .dropdown-toggle:empty::after, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:empty::after, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .link:empty::after {
   margin-left: 0;
 }
-.dropleft .dropdown-toggle::before, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a::before, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > a::before {
+.dropleft .dropdown-toggle::before, .dropleft #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link::before, #main-nav.navbar.navbar-expand-lg .dropleft .level_0 > .parent > .link::before {
   vertical-align: 0;
 }
 
-.dropdown-menu[x-placement^=top], #main-nav.navbar.navbar-expand-lg .level_0 [x-placement^=top].level_1, .dropdown-menu[x-placement^=right], #main-nav.navbar.navbar-expand-lg .level_0 [x-placement^=right].level_1, .dropdown-menu[x-placement^=bottom], #main-nav.navbar.navbar-expand-lg .level_0 [x-placement^=bottom].level_1, .dropdown-menu[x-placement^=left], #main-nav.navbar.navbar-expand-lg .level_0 [x-placement^=left].level_1 {
+.dropdown-menu[x-placement^=top], #main-nav.navbar.navbar-expand-lg .level_0 > .parent > [x-placement^=top].level_1, .dropdown-menu[x-placement^=right], #main-nav.navbar.navbar-expand-lg .level_0 > .parent > [x-placement^=right].level_1, .dropdown-menu[x-placement^=bottom], #main-nav.navbar.navbar-expand-lg .level_0 > .parent > [x-placement^=bottom].level_1, .dropdown-menu[x-placement^=left], #main-nav.navbar.navbar-expand-lg .level_0 > .parent > [x-placement^=left].level_1 {
   right: auto;
   bottom: auto;
 }
@@ -5020,7 +5013,7 @@ input[type=button].btn-block {
   border-top: 1px solid #e9ecef;
 }
 
-.dropdown-item, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link {
+.dropdown-item, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -5032,23 +5025,23 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 0;
 }
-.dropdown-item:hover, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:hover, .dropdown-item:focus, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:focus {
+.dropdown-item:hover, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link:hover, .dropdown-item:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link:focus {
   color: #16181b;
   text-decoration: none;
   background-color: #e9ecef;
 }
-.dropdown-item.active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.active.link, .ajax__tab_header .dropdown-item.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 .ajax__tab_header a.link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.ajax__tab_active, .dropdown-item:active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:active {
+.dropdown-item.active, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .active.link, .ajax__tab_header .dropdown-item.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .ajax__tab_header .link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link.ajax__tab_active, .dropdown-item:active, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link:active {
   color: #fff;
   text-decoration: none;
   background-color: #007bff;
 }
-.dropdown-item.disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.disabled.link, .dropdown-item:disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:disabled {
+.dropdown-item.disabled, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .disabled.link, .dropdown-item:disabled, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 .item .link:disabled {
   color: #adb5bd;
   pointer-events: none;
   background-color: transparent;
 }
 
-.dropdown-menu.show, #main-nav.navbar.navbar-expand-lg .level_0 .show.level_1 {
+.dropdown-menu.show, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .show.level_1 {
   display: block;
 }
 
@@ -5811,14 +5804,14 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   list-style: none;
 }
 
-.nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, .ajax__tab_header > span {
+.nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, .ajax__tab_header > span {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav-link:hover, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, .ajax__tab_header > span:hover, .nav-link:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, .ajax__tab_header > span:focus {
+.nav-link:hover, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:hover, .ajax__tab_header > span:hover, .nav-link:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:focus, .ajax__tab_header > span:focus {
   text-decoration: none;
 }
-.nav-link.disabled, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.disabled, .ajax__tab_header > span.disabled {
+.nav-link.disabled, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .disabled.link, .ajax__tab_header > span.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
@@ -5827,62 +5820,62 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .nav-tabs, .ajax__tab_header {
   border-bottom: 1px solid #dee2e6;
 }
-.nav-tabs .nav-link, .ajax__tab_header .nav-link, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a, .ajax__tab_header > span {
+.nav-tabs .nav-link, .ajax__tab_header .nav-link, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .link, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link, .ajax__tab_header > span {
   margin-bottom: -1px;
   background-color: transparent;
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.nav-tabs .nav-link:hover, .ajax__tab_header .nav-link:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a:hover, .ajax__tab_header > span:hover, .nav-tabs .nav-link:focus, .ajax__tab_header .nav-link:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a:focus, .ajax__tab_header > span:focus {
+.nav-tabs .nav-link:hover, .ajax__tab_header .nav-link:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .link:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link:hover, .ajax__tab_header > span:hover, .nav-tabs .nav-link:focus, .ajax__tab_header .nav-link:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .link:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link:focus, .ajax__tab_header > span:focus {
   isolation: isolate;
   border-color: #e9ecef #e9ecef #dee2e6;
 }
-.nav-tabs .nav-link.disabled, .ajax__tab_header .nav-link.disabled, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.disabled, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.disabled, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.disabled, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.disabled, .ajax__tab_header > span.disabled {
+.nav-tabs .nav-link.disabled, .ajax__tab_header .nav-link.disabled, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .disabled.link, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .disabled.link, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .disabled.link, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .disabled.link, .ajax__tab_header > span.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active,
+.nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .active.link, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .active.link, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active,
 .nav-tabs .nav-item.show .nav-link,
 .ajax__tab_header .nav-item.show .nav-link,
-.nav-tabs .nav-item.show #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a,
-#main-nav.navbar.navbar-expand-lg .nav-tabs .nav-item.show .level_0 > .parent > a,
-.ajax__tab_header .nav-item.show #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a,
-#main-nav.navbar.navbar-expand-lg .ajax__tab_header .nav-item.show .level_0 > .parent > a,
+.nav-tabs .nav-item.show #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link,
+#main-nav.navbar.navbar-expand-lg .nav-tabs .nav-item.show .level_0 > .parent > .link,
+.ajax__tab_header .nav-item.show #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .nav-item.show .level_0 > .parent > .link,
 .nav-tabs .nav-item.show .ajax__tab_header > span,
 .ajax__tab_header .nav-item.show .ajax__tab_header > span {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
-.nav-tabs .dropdown-menu, .ajax__tab_header .dropdown-menu, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .level_0 .nav-tabs .level_1, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header .level_1 {
+.nav-tabs .dropdown-menu, .ajax__tab_header .dropdown-menu, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .level_1, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .level_1 {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link, .nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > a, .nav-pills .ajax__tab_header > span {
+.nav-pills .nav-link, .nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > .link, .nav-pills .ajax__tab_header > span {
   background: none;
   border: 0;
   border-radius: 0.25rem;
 }
-.nav-pills .nav-link.active, .nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active, #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > a.active, .nav-pills .ajax__tab_header > span.active, .nav-pills .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header .nav-pills .nav-link.ajax__tab_active, .nav-pills #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .nav-pills .level_0 > .parent > a.ajax__tab_active, .nav-pills .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > a.ajax__tab_active, .nav-pills .ajax__tab_header > span.ajax__tab_active,
+.nav-pills .nav-link.active, .nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link, #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > .active.link, .nav-pills .ajax__tab_header > span.active, .nav-pills .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header .nav-pills .nav-link.ajax__tab_active, .nav-pills #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .nav-pills .level_0 > .parent > .link.ajax__tab_active, .nav-pills .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent > .link.ajax__tab_active, .nav-pills .ajax__tab_header > span.ajax__tab_active,
 .nav-pills .show > .nav-link,
-.nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a,
-#main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent.show > a,
+.nav-pills #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .link,
+#main-nav.navbar.navbar-expand-lg .nav-pills .level_0 > .parent.show > .link,
 .nav-pills .ajax__tab_header.show > span {
   color: #fff;
   background-color: #007bff;
 }
 
-.nav-fill > .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.nav-fill > a, .ajax__tab_header.nav-fill > span,
+.nav-fill > .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.nav-fill > .link, .ajax__tab_header.nav-fill > span,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
 }
 
-.nav-justified > .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.nav-justified > a, .ajax__tab_header.nav-justified > span,
+.nav-justified > .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent.nav-justified > .link, .ajax__tab_header.nav-justified > span,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -5935,11 +5928,11 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, .navbar-nav .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span {
+.navbar-nav .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, .navbar-nav .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-nav .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 {
+.navbar-nav .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 {
   position: static;
   float: none;
 }
@@ -6001,10 +5994,10 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   .navbar-expand-sm .navbar-nav, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 {
     flex-direction: row;
   }
-  .navbar-expand-sm .navbar-nav .dropdown-menu, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .navbar-expand-sm .navbar-nav .level_1, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .level_1 {
+  .navbar-expand-sm .navbar-nav .dropdown-menu, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .dropdown-menu, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 > .parent > .level_1 {
     position: absolute;
   }
-  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .nav-link, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 > .parent > a, .navbar-expand-sm .navbar-nav .ajax__tab_header > span, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .ajax__tab_header > span {
+  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .nav-link, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 > .parent > .link, .navbar-expand-sm .navbar-nav .ajax__tab_header > span, .navbar-expand-sm #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-sm .level_0 .ajax__tab_header > span {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -6046,10 +6039,10 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   .navbar-expand-md .navbar-nav, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 {
     flex-direction: row;
   }
-  .navbar-expand-md .navbar-nav .dropdown-menu, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .navbar-expand-md .navbar-nav .level_1, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .level_1 {
+  .navbar-expand-md .navbar-nav .dropdown-menu, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .dropdown-menu, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 > .parent > .level_1 {
     position: absolute;
   }
-  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .nav-link, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 > .parent > a, .navbar-expand-md .navbar-nav .ajax__tab_header > span, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .ajax__tab_header > span {
+  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .nav-link, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 > .parent > .link, .navbar-expand-md .navbar-nav .ajax__tab_header > span, .navbar-expand-md #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-md .level_0 .ajax__tab_header > span {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -6091,10 +6084,10 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   .navbar-expand-lg .navbar-nav, #main-nav.navbar.navbar-expand-lg .level_0 {
     flex-direction: row;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 {
+  .navbar-expand-lg .navbar-nav .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1 {
     position: absolute;
   }
-  .navbar-expand-lg .navbar-nav .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, .navbar-expand-lg .navbar-nav .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span {
+  .navbar-expand-lg .navbar-nav .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, .navbar-expand-lg .navbar-nav .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -6136,10 +6129,10 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
   .navbar-expand-xl .navbar-nav, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 {
     flex-direction: row;
   }
-  .navbar-expand-xl .navbar-nav .dropdown-menu, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .navbar-expand-xl .navbar-nav .level_1, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .level_1 {
+  .navbar-expand-xl .navbar-nav .dropdown-menu, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .dropdown-menu, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 > .parent > .level_1 {
     position: absolute;
   }
-  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .nav-link, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 > .parent > a, .navbar-expand-xl .navbar-nav .ajax__tab_header > span, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .ajax__tab_header > span {
+  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .nav-link, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 > .parent > .link, .navbar-expand-xl .navbar-nav .ajax__tab_header > span, .navbar-expand-xl #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand-xl .level_0 .ajax__tab_header > span {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -6178,10 +6171,10 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .navbar-expand .navbar-nav, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 {
   flex-direction: row;
 }
-.navbar-expand .navbar-nav .dropdown-menu, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .level_0 .navbar-expand .navbar-nav .level_1, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .level_1 {
+.navbar-expand .navbar-nav .dropdown-menu, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .dropdown-menu, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .dropdown-menu, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .level_1, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 > .parent > .level_1 {
   position: absolute;
 }
-.navbar-expand .navbar-nav .nav-link, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .nav-link, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 > .parent > a, .navbar-expand .navbar-nav .ajax__tab_header > span, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .ajax__tab_header > span {
+.navbar-expand .navbar-nav .nav-link, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .nav-link, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 > .parent > .link, .navbar-expand .navbar-nav .ajax__tab_header > span, .navbar-expand #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-expand .level_0 .ajax__tab_header > span {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -6210,16 +6203,16 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-nav .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a, .navbar-light .navbar-nav .ajax__tab_header > span, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span {
+.navbar-light .navbar-nav .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .link, .navbar-light .navbar-nav .ajax__tab_header > span, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a:hover, .navbar-light .navbar-nav .ajax__tab_header > span:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a:focus, .navbar-light .navbar-nav .ajax__tab_header > span:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .link:hover, .navbar-light .navbar-nav .ajax__tab_header > span:hover, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:hover, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .link:focus, .navbar-light .navbar-nav .ajax__tab_header > span:focus, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:focus, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span:focus {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar-light .navbar-nav .nav-link.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.disabled, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.disabled, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a.disabled, .navbar-light .navbar-nav .ajax__tab_header > span.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.disabled, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.disabled, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .disabled.link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .disabled.link, .navbar-light .navbar-nav .ajax__tab_header > span.disabled, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.disabled, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .show > .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .show > .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.show > a, .navbar-light .navbar-nav .ajax__tab_header.show > span, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.show > span, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header.show > span,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .show > .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .show > .nav-link, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .link, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.show > .link, .navbar-light .navbar-nav .ajax__tab_header.show > span, .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.show > span, #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header.show > span,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .active > .nav-link,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .active > .nav-link,
@@ -6229,15 +6222,15 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_active > .nav-link,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header .ajax__tab_active > .nav-link,
 .ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_active > .nav-link,
-.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.active > a,
-.navbar-light .navbar-nav .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-light .navbar-nav .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-light .navbar-nav .level_0 > .parent.ajax__tab_active > a,
-.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-.ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.ajax__tab_active > a,
+.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.active > .link,
+.navbar-light .navbar-nav .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-light .navbar-nav .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-light .navbar-nav .level_0 > .parent.ajax__tab_active > .link,
+.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+.ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent.ajax__tab_active > .link,
 .navbar-light .navbar-nav .ajax__tab_header.active > span,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.active > span,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header.active > span,
@@ -6250,16 +6243,16 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.show,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link.show,
-.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.show,
-#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a.show,
+.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .show.link,
+#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .show.link,
 .navbar-light .navbar-nav .ajax__tab_header > span.show,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.show,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span.show,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.active,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link.active,
-.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active,
-#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a.active,
+.navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link,
+#main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .active.link,
 .navbar-light .navbar-nav .ajax__tab_header > span.active,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.active,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span.active,
@@ -6269,12 +6262,12 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.ajax__tab_active,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header .nav-link.ajax__tab_active,
 .ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .nav-link.ajax__tab_active,
-.navbar-light #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active,
-#main-nav.navbar.navbar-expand-lg .navbar-light .ajax__tab_header .level_0 > .parent > a.ajax__tab_active,
-#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-light .level_0 > .parent > a.ajax__tab_active,
-.navbar-light .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active,
-.ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active,
-.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > a.ajax__tab_active,
+.navbar-light #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active,
+#main-nav.navbar.navbar-expand-lg .navbar-light .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-light .level_0 > .parent > .link.ajax__tab_active,
+.navbar-light .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active,
+.ajax__tab_header .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 > .parent > .link.ajax__tab_active,
 .navbar-light .navbar-nav .ajax__tab_header > span.ajax__tab_active,
 .navbar-light #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.ajax__tab_active,
 #main-nav.navbar.navbar-expand-lg .navbar-light .level_0 .ajax__tab_header > span.ajax__tab_active {
@@ -6303,16 +6296,16 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a, .navbar-dark .navbar-nav .ajax__tab_header > span, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .link, .navbar-dark .navbar-nav .ajax__tab_header > span, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span {
   color: rgba(255, 255, 255, 0.5);
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a:hover, .navbar-dark .navbar-nav .ajax__tab_header > span:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a:focus, .navbar-dark .navbar-nav .ajax__tab_header > span:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span:focus {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .link:hover, .navbar-dark .navbar-nav .ajax__tab_header > span:hover, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:hover, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .link:focus, .navbar-dark .navbar-nav .ajax__tab_header > span:focus, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span:focus, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span:focus {
   color: rgba(255, 255, 255, 0.75);
 }
-.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.disabled, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.disabled, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a.disabled, .navbar-dark .navbar-nav .ajax__tab_header > span.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.disabled, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.disabled, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .disabled.link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .disabled.link, .navbar-dark .navbar-nav .ajax__tab_header > span.disabled, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.disabled, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .show > .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .show > .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > a, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.show > a, .navbar-dark .navbar-nav .ajax__tab_header.show > span, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.show > span, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header.show > span,
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .show > .nav-link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .show > .nav-link, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.show > .link, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.show > .link, .navbar-dark .navbar-nav .ajax__tab_header.show > span, .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.show > span, #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header.show > span,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .active > .nav-link,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .active > .nav-link,
@@ -6322,15 +6315,15 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_active > .nav-link,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header .ajax__tab_active > .nav-link,
 .ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_active > .nav-link,
-.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.active > a,
-.navbar-dark .navbar-nav .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .navbar-nav .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-dark .navbar-nav .level_0 > .parent.ajax__tab_active > a,
-.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-.ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > a,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > a,
-.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.ajax__tab_active > a,
+.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.active > .link,
+.navbar-dark .navbar-nav .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .navbar-nav .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-dark .navbar-nav .level_0 > .parent.ajax__tab_active > .link,
+.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+.ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent.ajax__tab_active > .link,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header .level_0 > .parent.ajax__tab_active > .link,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent.ajax__tab_active > .link,
 .navbar-dark .navbar-nav .ajax__tab_header.active > span,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header.active > span,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header.active > span,
@@ -6343,16 +6336,16 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.show,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link.show,
-.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.show,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a.show,
+.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .show.link,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .show.link,
 .navbar-dark .navbar-nav .ajax__tab_header > span.show,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.show,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span.show,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.active,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link.active,
-.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a.active,
+.navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .active.link,
 .navbar-dark .navbar-nav .ajax__tab_header > span.active,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.active,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span.active,
@@ -6362,12 +6355,12 @@ body.pureVis #ya-site-form0 .input-group-append .ya-site-form__submit {
 .ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .nav-link.ajax__tab_active,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header .nav-link.ajax__tab_active,
 .ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .nav-link.ajax__tab_active,
-.navbar-dark #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active,
-#main-nav.navbar.navbar-expand-lg .navbar-dark .ajax__tab_header .level_0 > .parent > a.ajax__tab_active,
-#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-dark .level_0 > .parent > a.ajax__tab_active,
-.navbar-dark .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active,
-.ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active,
-.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > a.ajax__tab_active,
+.navbar-dark #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active,
+#main-nav.navbar.navbar-expand-lg .navbar-dark .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .navbar-dark .level_0 > .parent > .link.ajax__tab_active,
+.navbar-dark .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active,
+.ajax__tab_header .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 > .parent > .link.ajax__tab_active,
 .navbar-dark .navbar-nav .ajax__tab_header > span.ajax__tab_active,
 .navbar-dark #main-nav.navbar.navbar-expand-lg .level_0 .ajax__tab_header > span.ajax__tab_active,
 #main-nav.navbar.navbar-expand-lg .navbar-dark .level_0 .ajax__tab_header > span.ajax__tab_active {
@@ -8166,19 +8159,31 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
-.bg-primary, .nav-tabs .nav-link.active, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active, .ajax__tab_header .nav-link.active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
+.bg-primary, .nav-tabs .nav-link.active, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .active.link, .ajax__tab_header .nav-link.active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .active.link, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .active.link, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
   background-color: #5e5372 !important;
 }
 
-a.bg-primary:hover, .nav-tabs a.nav-link.active:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active:hover, .ajax__tab_header a.nav-link.active:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active:hover, .ajax__tab_header a.nav-link.ajax__tab_active:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active:hover, a.bg-primary:focus, .nav-tabs a.nav-link.active:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active:focus, .ajax__tab_header a.nav-link.active:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active:focus, .ajax__tab_header a.nav-link.ajax__tab_active:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.ajax__tab_active:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.ajax__tab_active:focus,
+a.bg-primary:hover, .nav-tabs a.nav-link.active:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active.link:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active.link:hover, .ajax__tab_header a.nav-link.active:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active.link:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active.link:hover, .ajax__tab_header a.nav-link.ajax__tab_active:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link.ajax__tab_active:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.link.ajax__tab_active:hover, a.bg-primary:focus, .nav-tabs a.nav-link.active:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active.link:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.active.link:focus, .ajax__tab_header a.nav-link.active:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.active.link:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.active.link:focus, .ajax__tab_header a.nav-link.ajax__tab_active:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link.ajax__tab_active:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.link.ajax__tab_active:focus,
 button.bg-primary:hover,
 .nav-tabs button.nav-link.active:hover,
+.nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.active.link:hover,
+#main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > button.active.link:hover,
 .ajax__tab_header button.nav-link.active:hover,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.active.link:hover,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > button.active.link:hover,
 .ajax__tab_header button.nav-link.ajax__tab_active:hover,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.link.ajax__tab_active:hover,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > button.link.ajax__tab_active:hover,
 button.bg-primary:focus,
 .nav-tabs button.nav-link.active:focus,
+.nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.active.link:focus,
+#main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > button.active.link:focus,
 .ajax__tab_header button.nav-link.active:focus,
-.ajax__tab_header button.nav-link.ajax__tab_active:focus {
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.active.link:focus,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > button.active.link:focus,
+.ajax__tab_header button.nav-link.ajax__tab_active:focus,
+.ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > button.link.ajax__tab_active:focus,
+#main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > button.link.ajax__tab_active:focus {
   background-color: #463e54 !important;
 }
 
@@ -11387,15 +11392,15 @@ h2,
   font-style: italic !important;
 }
 
-.text-white, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, .nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
+.text-white, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, .nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
   color: #fff !important;
 }
 
-.text-primary, .nav-tabs .nav-link, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a, .ajax__tab_header .nav-link, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a, .ajax__tab_header > span {
+.text-primary, .nav-tabs .nav-link, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > .link, .ajax__tab_header .nav-link, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > .link, .ajax__tab_header > span {
   color: #5e5372 !important;
 }
 
-a.text-primary:hover, .nav-tabs a.nav-link:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a:hover, .ajax__tab_header a.nav-link:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a:hover, a.text-primary:focus, .nav-tabs a.nav-link:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a:focus, .ajax__tab_header a.nav-link:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a:focus {
+a.text-primary:hover, .nav-tabs a.nav-link:hover, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:hover, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.link:hover, .ajax__tab_header a.nav-link:hover, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:hover, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.link:hover, a.text-primary:focus, .nav-tabs a.nav-link:focus, .nav-tabs #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:focus, #main-nav.navbar.navbar-expand-lg .nav-tabs .level_0 > .parent > a.link:focus, .ajax__tab_header a.nav-link:focus, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:focus, #main-nav.navbar.navbar-expand-lg .ajax__tab_header .level_0 > .parent > a.link:focus {
   color: #393346 !important;
 }
 
@@ -11455,11 +11460,11 @@ a.text-dark:hover, a.ya-site-form__input-text:hover, #ya-site-form0 a.ya-site-fo
   color: #121416 !important;
 }
 
-.text-white, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a, .nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
+.text-white, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > .link, .nav-tabs .nav-link.active, .ajax__tab_header .nav-link.active, .nav-tabs .ajax__tab_header > span.active, .ajax__tab_header > span.active, .ajax__tab_header .nav-link.ajax__tab_active, .ajax__tab_header > span.ajax__tab_active {
   color: #fff !important;
 }
 
-a.text-white:hover, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:hover, .nav-tabs a.nav-link.active:hover, .ajax__tab_header a.nav-link.active:hover, .ajax__tab_header a.nav-link.ajax__tab_active:hover, a.text-white:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a:focus, .nav-tabs a.nav-link.active:focus, .ajax__tab_header a.nav-link.active:focus, .ajax__tab_header a.nav-link.ajax__tab_active:focus {
+a.text-white:hover, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:hover, .nav-tabs a.nav-link.active:hover, .ajax__tab_header a.nav-link.active:hover, .ajax__tab_header a.nav-link.ajax__tab_active:hover, a.text-white:focus, #main-nav.navbar.navbar-expand-lg .level_0 > .parent > a.link:focus, .nav-tabs a.nav-link.active:focus, .ajax__tab_header a.nav-link.active:focus, .ajax__tab_header a.nav-link.ajax__tab_active:focus {
   color: #d9d9d9 !important;
 }
 
