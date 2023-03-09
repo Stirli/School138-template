@@ -1,6 +1,6 @@
 #main-nav.navbar.navbar-expand-lg {
   .level_0 {
-    @extend .navbar-nav, , .mr-auto;
+    @extend .navbar-nav, .mr-auto;
 
     & > .parent {
       & > .level_1 {
@@ -25,10 +25,15 @@
       opacity: 0;
       transition: all 1s ease;
 
-      a {
+      a.link {
         @extend .dropdown-item;
 
-        white-space: pre-line !important;
+        white-space: normal !important;
+        min-width: 40vh;
+
+        &.active {
+          background-color: theme-color("primary") !important;
+        }
       }
     }
   }

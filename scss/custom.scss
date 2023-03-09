@@ -3,6 +3,7 @@
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 @import "../node_modules/bootstrap/scss/mixins";
+@import 'colors.scss';
 @import 'navbar.scss';
 @import 'nav-tabs.scss';
 @import 'yandex-search.scss';
@@ -20,10 +21,6 @@ body{
     @include rfs(20);
 }
 
-$theme-colors: (
-    "white": #fff,
-    "primary": #5e5372,
-);
 
 body.pureVis * {
     background: black !important;

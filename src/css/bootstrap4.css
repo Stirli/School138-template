@@ -12,8 +12,12 @@
   opacity: 0;
   transition: all 1s ease;
 }
-#main-nav.navbar.navbar-expand-lg .level_0 .level_1 a {
-  white-space: pre-line !important;
+#main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link {
+  white-space: normal !important;
+  min-width: 40vh;
+}
+#main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 .ajax__tab_header a.link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.ajax__tab_active {
+  background-color: #5e5372 !important;
 }
 
 .ajax__tab_header > span span {
@@ -5016,7 +5020,7 @@ input[type=button].btn-block {
   border-top: 1px solid #e9ecef;
 }
 
-.dropdown-item, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a {
+.dropdown-item, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -5028,17 +5032,17 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 0;
 }
-.dropdown-item:hover, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a:hover, .dropdown-item:focus, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a:focus {
+.dropdown-item:hover, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:hover, .dropdown-item:focus, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:focus {
   color: #16181b;
   text-decoration: none;
   background-color: #e9ecef;
 }
-.dropdown-item.active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.active, .ajax__tab_header .dropdown-item.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 .ajax__tab_header a.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.ajax__tab_active, .dropdown-item:active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a:active {
+.dropdown-item.active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.active.link, .ajax__tab_header .dropdown-item.ajax__tab_active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 .ajax__tab_header a.link.ajax__tab_active, .ajax__tab_header #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link.ajax__tab_active, .dropdown-item:active, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:active {
   color: #fff;
   text-decoration: none;
   background-color: #007bff;
 }
-.dropdown-item.disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.disabled, .dropdown-item:disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a:disabled {
+.dropdown-item.disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.disabled.link, .dropdown-item:disabled, #main-nav.navbar.navbar-expand-lg .level_0 .level_1 a.link:disabled {
   color: #adb5bd;
   pointer-events: none;
   background-color: transparent;
