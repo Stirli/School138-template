@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "sass": "sass  scss/custom.scss  src/css/bootstrap4.css"
+    "sass": "sass  scss/custom.scss  src/css/bootstrap4.css",
+    "pv-sass": "sass  scss/purevis.scss  src/css/purevis.css"
   },
   "type": "module",
   "dependencies": {

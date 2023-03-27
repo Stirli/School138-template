@@ -1,0 +1,52 @@
+.theme-white {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000;
+}
+
+.theme-black {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: #fff;
+}
+
+.theme-columbia-blue {
+  background-color: #9dd1ff !important;
+  border-color: #9dd1ff !important;
+  color: #000;
+}
+
+.theme-beige {
+  background-color: #f7f3d6 !important;
+  border-color: #f7f3d6 !important;
+  color: #000;
+}
+
+.theme-primary {
+  background-color: #5e5372 !important;
+  border-color: #5e5372 !important;
+  color: #fff;
+}
+
+#pureVis-settings {
+  display: none !important;
+}
+
+body:not(.pureVis) #pureVis-off,
+body:not(.pureVis) #pureVis-settingsBtn {
+  display: none !important;
+}
+body:not(.pureVis) #pureVis-on {
+  display: block !important;
+}
+
+body.pureVis #pureVis-settings.show,
+body.pureVis #pureVis-settingsBtn,
+body.pureVis #pureVis-off {
+  display: block !important;
+}
+body.pureVis #pureVis-on {
+  display: none !important;
+}
+
+/*# sourceMappingURL=purevis.css.map */

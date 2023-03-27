@@ -1,11 +1,9 @@
-.ya-site-form__input-text {
+#ya-site-form0 {
+  .ya-site-form__input-text {
     @extend .form-control, .mr-sm-2, .bg-light, .text-dark;
-}
+  }
 
-#ya-site-form0 .ya-site-form__submit {
+  .ya-site-form__submit {
     @extend .btn, .btn-outline-success, .my-2, .my-sm-0, .bg-light, .text-dark;
-}
-
-body.pureVis #ya-site-form0 .ya-site-form__submit {
-    @extend .btn, .btn-outline-success, .my-2, .my-sm-0, .bg-dark, .text-light;
+  }
 }

@@ -1,0 +1,46 @@
+@use "sass:color";
+$mytheme-colors: (
+  "white": white,
+  "black": black,
+  "columbia-blue": #9dd1ff,
+  "beige": #f7f3d6,
+);
+
+@each $color-name, $color in $mytheme-colors {
+  $invert-color: invert($color);
+  @debug "c: #{$color}; i: #{$invert-color} ";
+  body[data-theme="#{$color-name}"] {
+    .bg-light,
+    .btn-light,
+    *[class*="btn-outline-"] {
+      background-color: $color !important;
+    }
+
+    .border {
+      border-color: $color !important;
+    }
+
+    .btn-light,
+    .text-dark {
+      @if color.lightness($color) > 50 {
+        color: #000 !important;
+      } @else {
+        color: #fff !important;
+      }
+    }
+
+    .btn-dark,
+    .btn-primary,
+    .bg-dark,
+    .bg-primary {
+      background-color: $invert-color !important;
+    }
+
+    .btn-dark,
+    .btn-primary
+    .text-light,
+    .text-white{
+      color: $color !important;
+    }
+  }
+}

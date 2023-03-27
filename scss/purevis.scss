@@ -1,0 +1,46 @@
+@use "sass:color";
+
+$mytheme-colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "columbia-blue": #9dd1ff,
+  "beige": #f7f3d6,
+  "primary": #5e5372,
+);
+
+@each $color-name, $color in $mytheme-colors {
+  .theme-#{$color-name} {
+    background-color: $color !important;
+    border-color: $color !important;
+    @if color.lightness($color) > 50 {
+      color: #000;
+    } @else {
+      color: #fff;
+    }
+  }
+}
+
+#pureVis-settings {
+  display: none !important;
+}
+
+body:not(.pureVis) {
+  #pureVis-off,
+  #pureVis-settingsBtn {
+    display: none !important;
+  }
+  #pureVis-on {
+    display: block !important;
+  }
+}
+
+body.pureVis {
+  #pureVis-settings.show,
+  #pureVis-settingsBtn,
+  #pureVis-off {
+    display: block !important;
+  }
+  #pureVis-on {
+    display: none !important;
+  }
+}
