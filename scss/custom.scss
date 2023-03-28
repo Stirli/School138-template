@@ -4,7 +4,6 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "colors.scss";
-@import "themes.scss";
 @import "yandex-search.scss";
 @import "navbar.scss";
 @import "nav-tabs.scss";
@@ -15,8 +14,10 @@
 @import "sizing.scss";
 @import "card.scss";
 @import "borders.scss";
+@import "themes.scss";
 
 $enable-responsive-font-sizes: true;
+
 body {
   @extend body;
   @include rfs(20);
@@ -28,7 +29,6 @@ body {
     @extend .my-#{$h-offset};
   }
 }
-
 .ar-1 {
   aspect-ratio: 1;
 }

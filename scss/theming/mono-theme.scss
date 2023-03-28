@@ -1,0 +1,23 @@
+@use "sass:color";
+
+@mixin block($first-color, $second-color) {
+  background-color: $second-color !important;
+  color: $first-color !important;
+  border-color: $first-color !important;
+  a{
+    color: $first-color !important;
+  }
+}
+
+@mixin theme-mono($first-color, $second-color) {
+  .container-fluid {
+    @include block($first-color, $second-color);
+    .card {
+      @include block($first-color, $second-color);
+    }
+    .bg-primary,
+    .btn:not(.theme-button) {
+      @include block($second-color, $first-color);
+    }
+  }
+}
